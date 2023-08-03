@@ -46,6 +46,7 @@ const transformData = (input) => {
     const publicIp = items.publicIp;
     const userToken = items.userToken;
     const productToken = items.productToken;
+    const email = items.email;
     if (!groupedData[publicIp]) {
     
       groupedData[publicIp] = {
@@ -59,7 +60,7 @@ const transformData = (input) => {
       key: String(index + 30),
       UserToken: userToken,
       ProductToken: productToken,
-      ProductName: "ProductName",
+      Email: email,
     });
   });
 
